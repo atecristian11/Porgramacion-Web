@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(180, 194, 221);
+  font-family: fantasy, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.Descripcion h2{
+  text-align: center;
+}
+
+.Descripcion{
+  background-color: lightblue;
+  border-radius: 1cm;
+}
+
+.Descripcion2{
+  background-color:black;
+  border-radius: 1cm;
+  height: 50%;
+  column-count: 2;
+  color: white;
+}
+
+
+.banner2{
+  text-align: center;
+  background-color: lightblue;;
+  color: white;
+  border-radius: 1cm;
+}
+
+.banner3{
+  padding: 1%;
+  text-align: left;
+  background-color: lightblue;;
+  color: black;
+}
+
+.banner3 p{
+  float: right;
+}
+
+.header {
+  background-color: lightblue;;
+  height: 70px;
+  border-radius: 1cm;
+}
+
+.logo {
+  float: left;
+  padding: 10px;
+}
+
+.menu {
+  float: right;
+  margin: 24px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.banner {
+  background-image: url(../img/gabo11.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 1cm;
+}
+
+.banner h1 {
+  text-align: right;
+  font-size: 80px;
+  padding: 150px 50px;
+}
+
+.tablaCategorias {
+  width: auto;
+  margin: auto;
+}
+.cat {
+  padding: 50px;
+}
+.boton_categorias {
+  width: 80px;
+  height: 80px;
+  background-color: #f38902;
+  border-radius: 50px;
+  font-size: 11px;
+  margin: 5px;
+  padding: 10px;
+  line-height: 45px;
+  text-align: center;
+  float: left;
+}
+
+.boton_categorias:hover {
+  opacity: 0.3;
+}
+
+.boton_categorias a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 5px 5px 5px;
+}
+
+.biografia {
+  background-color: black;
+  color: white;
+  padding: 20px 100px 70px 100px;
+  text-align: justify;
+  border-radius: 1cm;
+}
+
+.biografia h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.premios {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.premios table {
+  padding: 30px 100px 30px 100px;
+}
+
+.premios h2 {
+  padding: 30px 0px;
+  border-radius: 1cm;
+}
+
+.premios h3 {
+  background-color: rgb(255, 145, 19);
+  border: 2px solid blue;
+  text-align: center;
+  padding: 15px 30px 15px 30px;
+  margin: 40px;
+}
+
+.premios td {
+  text-align: left;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 100px 25px 100px;
+  
+}
