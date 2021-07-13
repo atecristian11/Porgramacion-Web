@@ -1,0 +1,33 @@
+body{
+    background-image: url(img/fondo.webp);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+}
+
+.boton{
+  width: 80px;
+  height: 80px;
+  background-color: greenyellow;
+  /* border-radius: 50px; */
+  font-size: 11px;
+  margin: 5px;
+  padding: 10px;
+  line-height: 45px;
+  text-align: center;
+  float: left;
+}
+
+.boton:hover {
+    opacity: 0.3;
+  }
+
+.botones{
+columns: 2;
+}
+
+  .boton img{
+    height: 100px;
+  }
