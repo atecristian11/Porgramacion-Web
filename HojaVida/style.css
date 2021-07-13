@@ -1,0 +1,49 @@
+body {
+  background-image: url(img/fondo.webp);
+  background-size: cover;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  background-color: aqua;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.super h1 {
+  background-color: aqua;
+}
+
+.super1 p {
+  column-count: 2;
+}
+
+.super1 h1 {
+  background-color: aqua;
+}
+
+.super2 p {
+  column-count: 2;
+}
+
+.super2 h1 {
+  background-color: aqua;
+}
+
+.final {
+  background-color: aqua;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 100px 25px 100px;
+}
