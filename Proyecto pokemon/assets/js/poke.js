@@ -7,29 +7,48 @@ const getData = (API) => {
   return fetch(API)
     .then((Response) => Response.json())
     .then((json) => {
-      llenarDatos(json.results), paginacion(json.next, json.previous);
-
-
+        pokeData(json.results), paginacion(json.next, json.previous);
     })
     .catch((error) => {
       console.log("error", error);
     });
 };
 
-// Dibuja cards de personajes
-const llenarDatos = (data) => {
+// const pokedata
+const pokeData = (data) => {
+    
     let html = "";
-    console.log(data);
+     document.getElementById("datosPersonajes").innerHTML = "";
     data.forEach((pj) => {
+        let nombre = pj.name;
+        const URL = pj.url;
+        return fetch(URL)
+         .then((Response) => Response.json())
+         .then((json) => {
+            llenarDatos(json, html, nombre);
+         })
+         .catch((error) => {
+            console.log("error", error);
+          });
+    })
+}
+
+// Dibuja cards de personajes
+const llenarDatos = (data, html, nombre) => {
+    console.log(data);
+
       html += '<div class="col mt-5">';
       html += '<div class="card" style="width: 10rem;">';
+      html += `<img src="${data.sprites.other.dream_world.front_default}" class="card-img-top" alt="${data.name}">`;
       html += '<div class="card-body">';
-      html += `<h5 class="card-title">Nombre Pokemon: ${pj.name}</h5>`;
+      html += `<h5 class="card-title">Nombre Pokemon: ${nombre}</h5>`;
+      html += `<h5 class="card-title">Peso:  ${data.weight}</h5>`;
+      html += `<h5 class="card-title">Altura:  ${data.height}</h5>`;
       html += "</div>";
       html += "</div>";
       html += "</div>";
-      });
-    document.getElementById("datosPersonajes").innerHTML = html;
+
+    document.getElementById("datosPersonajes").innerHTML += html;
   };
 
 // Paginacion
